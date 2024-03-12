@@ -23,8 +23,9 @@ public class ClaimDuck : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         canardConcerné.SetActive(false);
-        bravo.Play();
         canardFinal.SetActive(true);
         eventFinal.SetActive(true);
+        bravo.Play();
+        
     }
 }
