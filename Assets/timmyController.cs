@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class timmyController : MonoBehaviour
 {
     private Rigidbody _rb;
+    private Animator animator;
     private float _mouvementHorizontal;
     private float _mouvementAvant;
 
@@ -17,12 +18,15 @@ public class timmyController : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         Bouger();
+        // Animation();
     }
 
     void OnMove(InputValue value){
@@ -45,4 +49,24 @@ Quaternion _degresEnQuaternion = Quaternion.Euler(_tourneDeCombien);
 _rb.MoveRotation(_rb.rotation * _degresEnQuaternion);
 
     }
+
+    // void Animation(){
+    //     if(Input.GetKey("w")){
+    //         animator.SetBool("isWalking", true);
+            
+    //     }
+    //     if(!Input.GetKey("w")){
+    //         animator.SetBool("isWalking", false);
+    //         animator.SetBool("isRunning", false);
+            
+    //     }
+    //     if(Input.GetKey(KeyCode.LeftShift)&&animator.GetBool("isWalking")==true){
+    //         animator.SetBool("isRunning", true);
+            
+    //     }
+    //     if(!Input.GetKey(KeyCode.LeftShift)&&animator.GetBool("isWalking")==true){
+    //         animator.SetBool("isRunning", false);
+            
+    //     } 
+    // }
 }
