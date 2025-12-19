@@ -48,7 +48,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -67,6 +67,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "canardConcern\xE9": {fileID: 0}
-  canardFinal: {fileID: 0}
-  eventFinal: {fileID: 0}
+  canardObtenu: 
   bravo: {fileID: 0}
+  _infosCanards: {fileID: 11400000, guid: 1ceb374262349d14787078a678c139ff, type: 2}

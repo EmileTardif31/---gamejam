@@ -13,19 +13,7 @@ public class InfosCanards : ScriptableObject
    public bool violet = false;
    public bool red = false;
 
+    public bool tutoFini = false;
    public bool UsineFinie = false;
    public bool ForetFinie = false;
-
-   void Update()
-    {
-        if (green && blue && pink)
-        {
-            UsineFinie = true;
-        }
-
-        if (yellow && violet && red)
-        {
-            ForetFinie = true;
-        }
-    }
 }
