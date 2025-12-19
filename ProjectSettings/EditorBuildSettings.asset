@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: bdcd73c7b25d6f74b85252265d28c291
   - enabled: 1
-    path: Assets/Scenes/planete.unity
-    guid: 049ed2e609212ce439114f95fbaa3f50
+    path: Assets/Scenes/Intro.unity
+    guid: cb3f274479873984e80ca0e0590c9180
   - enabled: 1
     path: Assets/Scenes/avant-tuto.unity
     guid: 20e3400cc53f49241aa990b139284b15
