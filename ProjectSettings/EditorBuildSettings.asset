@@ -4,5 +4,47 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: bdcd73c7b25d6f74b85252265d28c291
+  - enabled: 1
+    path: Assets/Scenes/planete.unity
+    guid: 049ed2e609212ce439114f95fbaa3f50
+  - enabled: 1
+    path: Assets/Scenes/avant-tuto.unity
+    guid: 20e3400cc53f49241aa990b139284b15
+  - enabled: 1
+    path: Assets/Scenes/Tutoriel.unity
+    guid: 4b9b3d2087872034f836c5e885c05291
+  - enabled: 1
+    path: Assets/Scenes/apres-tuto.unity
+    guid: 5d15b5b6cff059b4299f38e20ea5f322
+  - enabled: 1
+    path: Assets/Scenes/avant-usine.unity
+    guid: 94019175b73780b40aaa726fb6ed9e4f
+  - enabled: 1
+    path: Assets/Scenes/UsineNiv1.unity
+    guid: 5a463281e6e238742a45430f11e82829
+  - enabled: 1
+    path: Assets/Scenes/avant-foret.unity
+    guid: 349cd081eaea159489f6e8bbee565acc
+  - enabled: 1
+    path: Assets/Scenes/foret-niv2.unity
+    guid: 7769f33fb4fa2e5458344a36556ad760
+  - enabled: 1
+    path: Assets/Scenes/avant-ile.unity
+    guid: ba19f050920a2f9429dcd7c915ff58d1
+  - enabled: 1
+    path: Assets/Scenes/Ile-niv3.unity
+    guid: 20323552b1e94415fa6bd7ee8aeadbdc
+  - enabled: 1
+    path: Assets/Scenes/apres ile.unity
+    guid: 14cf9ac302aa5ca468369372426cdad6
+  - enabled: 1
+    path: Assets/Scenes/boss-gundam.unity
+    guid: b4cc59017dff20440b8f835f90d9baaa
+  - enabled: 1
+    path: Assets/Scenes/apres-boss.unity
+    guid: 572facaa652010a40bfb963833113a09
   m_configObjects: {}
