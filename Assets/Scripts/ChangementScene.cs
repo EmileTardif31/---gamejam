@@ -21,4 +21,14 @@ public class ChangementScene : MonoBehaviour
     void OnTriggerEnter(Collider other){
         SceneManager.LoadScene(nomDeLaScene);
     }
+
+    public void ChangerScene()
+    {
+        SceneManager.LoadScene(nomDeLaScene);
+    }
+
+    public void AppQuit()
+    {
+        Application.Quit();
+    }
 }
