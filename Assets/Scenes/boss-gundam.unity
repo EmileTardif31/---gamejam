@@ -10801,6 +10801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c75624eab9c1b43aef5d2d6b96008f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _nomDeLaSceneAChargerApres: apres-boss
 --- !u!1 &1744795149
 GameObject:
   m_ObjectHideFlags: 0

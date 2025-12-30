@@ -24,7 +24,7 @@ public class ClaimDuck : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         canardConcerné.SetActive(false);
-        // bravo.Play();
+        bravo.Play();
         
         SetCanardViaReflection(canardObtenu);
     }
@@ -47,15 +47,5 @@ public class ClaimDuck : MonoBehaviour
         {
             field.SetValue(_infosCanards, true);
         }
-
-        // bool boolVar = field.GetValue(_infosCanards) as bool;
-
-        // if (boolVar == null)
-        // {
-        //     Debug.LogError($"'{nomDuCanard}' n'est pas un BoolVariable");
-        //     return;
-        // }
-
-        // boolVar.Value = true;
     }
 }
