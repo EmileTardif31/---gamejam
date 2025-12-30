@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class PlayRecord : MonoBehaviour
 {
-    [SerializeField] private string _nomDeLaScene;
-    [SerializeField] private AudioSource _trackAudio;
+    [SerializeField] private string _nomDeLaSceneAChargerApres;
+    private AudioSource _srcAudio;
 
     // Start is called before the first frame update
     void Start()
     {
-        _trackAudio.Play();
+        _srcAudio = GetComponent<AudioSource>();
+
+        _srcAudio.Play();
         StartCoroutine(WaitForEnd());
     }
 
@@ -24,12 +26,12 @@ public class PlayRecord : MonoBehaviour
     IEnumerator WaitForEnd()
     {
         // On attend que le son commence vraiment
-        yield return new WaitUntil(() => _trackAudio.isPlaying);
+        yield return new WaitUntil(() => _srcAudio.isPlaying);
 
         // Puis on attend qu'il soit fini
-        yield return new WaitUntil(() => !_trackAudio.isPlaying);
+        yield return new WaitUntil(() => !_srcAudio.isPlaying);
 
-        SceneManager.LoadScene(_nomDeLaScene);
+        SceneManager.LoadScene(_nomDeLaSceneAChargerApres);
         //test
     }
 }
