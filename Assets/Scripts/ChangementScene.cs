@@ -7,16 +7,37 @@ public class ChangementScene : MonoBehaviour
 {
     [SerializeField] string nomDeLaSceneACharger;
     [SerializeField] string nomDeLaSceneActuelle;
+    [SerializeField] string KeyTopress;
     [SerializeField] public InfosCanards _infosCanards;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (nomDeLaSceneActuelle == "usine")
+        {
+            _infosCanards.UsineFinie = false;
+            _infosCanards.ForetFinie = false;
+        }
+        else if(nomDeLaSceneActuelle == "foret")
+        {
+            
+            _infosCanards.ForetFinie = false;
+        }
+        else if(nomDeLaSceneActuelle == "tuto")
+        {
+            _infosCanards.tutoFini = false;
+            _infosCanards.UsineFinie = false;
+            _infosCanards.ForetFinie = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyTopress))
+        {
+            SceneManager.LoadScene(nomDeLaSceneACharger);
+        }
+
         LoadSceneFromScriptable();
     }
 

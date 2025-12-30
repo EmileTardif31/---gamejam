@@ -16,9 +16,9 @@ MonoBehaviour:
   green: 0
   blue: 0
   pink: 0
-  yellow: 1
-  violet: 1
-  red: 1
+  yellow: 0
+  violet: 0
+  red: 0
   tutoFini: 0
   UsineFinie: 0
   ForetFinie: 0

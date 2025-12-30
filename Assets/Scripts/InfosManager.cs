@@ -9,7 +9,7 @@ public class InfosManager : MonoBehaviour
     void Start()
     {
 
-        Ereset();
+       Invoke("Ereset",1);
     }
 
    void Update()
